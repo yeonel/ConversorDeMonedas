@@ -1,4 +1,7 @@
-package PACKAGE_NAME;
+import java.util.Map;
 
-public class RespuestaMonedas {
-}
+public record RespuestaMonedas(
+        String result,
+        String base_code,
+        Map<String, Double> conversion_rates
+) {}
